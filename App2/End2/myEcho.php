@@ -1,10 +1,8 @@
 <?php
 namespace App2\End2;
 
-class MyEcho
+function myEcho()
 {
-    function prnt2()
-    {
-        echo 'Мы в каталоге App2/End2!';
-    }
+    echo 'Мы в каталоге App2/End2!';
 }
+

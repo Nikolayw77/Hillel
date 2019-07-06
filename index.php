@@ -1,23 +1,14 @@
 ﻿<?php
-//require_once 'App1/Begin1/MyEcho.php';
-//require_once 'App2/End2/myEcho.php';
-
-spl_autoload_register(function($classname){
-    $path = __DIR__ . "/$classname.php";
-    if (file_exists($path)) {
-        require_once $path;
-    }
-});
+require_once 'App1/Begin1/MyEcho.php';
+require_once 'App2/End2/myEcho.php';
 
 use App1\Begin1 as App1;
 use App2\End2 as App2;
-
 
 $a = new App1\MyEcho();
 $a -> prnt();
 
 echo "<br>";
 
-$b = new App2\MyEcho();
-$b -> prnt2();
+App2\myEcho();
 

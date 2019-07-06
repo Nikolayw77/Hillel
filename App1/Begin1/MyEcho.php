@@ -1,6 +1,5 @@
 <?php
 namespace  App1\Begin1;
-
 class MyEcho
 {
     function prnt()
@@ -8,4 +7,5 @@ class MyEcho
         echo 'Это App1 каталога App1\Begin!';
     }
 }
+
 
