@@ -2,6 +2,8 @@
 //require_once 'App1/Begin1/MyEcho.php';
 //require_once 'App2/End2/myEcho.php';
 
+echo "Hello World!";
+
 spl_autoload_register(function($classname){
     $path = __DIR__ . "/$classname.php";
     if (file_exists($path)) {
